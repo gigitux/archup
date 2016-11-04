@@ -1,0 +1,25 @@
+<ion-view view-title="Community">
+  <ion-content>
+    <ul>
+      <li ng-repeat="package in community_packages">
+        <div class="card">
+          <div class="item item-divider">
+            {{ package.title}}
+            <br>
+          </div>
+          <div class="item item-text-wrap">
+            {{ package.description}}
+            <br>
+            {{ package.categories }}
+            <br>
+            <a ng-href="{{ package.link }}">
+              More details
+            </a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+  </ion-content>
+</ion-view>
