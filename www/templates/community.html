@@ -12,8 +12,9 @@
             <br>
             {{ package.categories }}
             <br>
-            <a ng-href="{{ package.link }}">
+            <a ng-href="{{ package.link }}" onclick="window.open(this.href, '_blank'); return false;">
               More details
+            </a>
             </a>
           </div>
         </div>

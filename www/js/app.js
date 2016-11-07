@@ -79,6 +79,16 @@ angular.module('archup', ['ionic', 'starter.controllers'])
       }
     }
   })
+
+  .state('app.search', {
+    url: '/search',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/search.html',
+        controller: 'Search'
+      }
+    }
+  })
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/allpackage');
 });
