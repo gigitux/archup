@@ -15,6 +15,9 @@ angular.module('archup', ['ionic', 'starter.controllers'])
       cordova.plugins.Keyboard.disableScroll(true);
 
     }
+    if (cordova.platformId == 'android') {
+    StatusBar.backgroundColorByHexString("#0c60ee");
+}
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
